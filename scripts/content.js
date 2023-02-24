@@ -1,11 +1,3 @@
-// const pathName = window.location.pathname;
-
-// if (pathName.includes('status')) {
-//   const mainTweet = document.querySelector('article');
-//   const tweetImgs = mainTweet.querySelectorAll('tweetImgs');
-//   const sendButton = document.createElement('button');
-// }
-
 const addConfigButton = () => {
   const articles = document.querySelectorAll('article');
   articles.forEach((article) => {
@@ -18,10 +10,11 @@ const addConfigButton = () => {
           articleImagesFiltered.push(articleImage);
         }
       });
+
       if (articleImagesFiltered.length > 0) {
         const createPopup = () => {
           const imagePreviewElement = document.createElement('div');
-          const hashTags = [];
+          //   const hashTags = [];
           //   I need some code here that will extract the hashtags from the tweet string
           //   article.querySelector('div[lang="en"]')
 
@@ -41,7 +34,7 @@ const addConfigButton = () => {
                 <div class="previewBox">
                     <img src="${imgURL}">
                     <div>
-                        <input type="text">Testing</input>
+                        <input type="text"></input>
                     </div>
                 </div>
             `;
